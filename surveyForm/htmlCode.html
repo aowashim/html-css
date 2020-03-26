@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="cssCode.css">
+</head>
+<body>
+    <h1>MyWeb Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="">
+        <label for="nm">Name</label> <br>
+        <input type="text" name="name" id="nm" placeholder="Enter your name" size="20">
+        <br> <br>
+        <label for="eml">Email</label> <br>
+        <input type="email" name="email" id="eml" placeholder="Enter your email" size="30">
+        <br> <br>
+        <label for="ag">Age</label> <br>
+        <input type="number" name="age" id="ag" placeholder="Enter your age" size="5">
+        <br> <br>
+        <label for="rl">Which option best describes your current role?</label>
+        <br>
+        <select name="rule" id="rl">
+            <option value="" disabled selected>Select your current rule</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time learner</option>
+            <option value="others">Others</option>
+        </select>
+        <br><br>
+        <div  style="font-size: 24px;">
+            <b>Would you recommend MyWeb to a friend?</b><br>
+            <div style="margin-top: 6px; margin-left: 20px;">
+                <input type="radio" name="recommend" id="df" value="definitely">
+                <label for="df">Definitely</label><br>
+                <input type="radio" name="recommend" id="mb" value="may be">
+                <label for="mb">May be</label><br>
+                <input type="radio" name="recommend" id="ns" value="not sure">
+                <label for="ns">Not sure</label>
+            </div>
+        </div><br>
+        <div  style="font-size: 24px;">
+            <b>What would you like to see improved?</b><br>
+            <div style="margin-top: 6px; margin-left: 20px;">
+                <input type="checkbox" name="feedback" id="option1" value="option1">
+                <label for="option1">option1</label><br>
+                <input type="checkbox" name="feedback" id="option2" value=" option2">
+                <label for="option2">Option2</label><br>
+                <input type="checkbox" name="feedback" id="option3" value="option3">
+                <label for="option3">Option3</label><br>
+                <input type="checkbox" name="feedback" id="option4" value="option4">
+                <label for="option4">Option4</label><br>
+                <input type="checkbox" name="feedback" id="option5" value="option5">
+                <label for="option5">Option5</label><br>
+                <input type="checkbox" name="feedback" id="option6" value="option6">
+                <label for="option6">Option6</label>
+            </div>
+        </div><br>
+        <div>
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" cols="70" rows="6" placeholder=
+            "Enter your comments here......"></textarea>
+        </div><br>
+        <input style="width: 350px;" type="submit" value="submit">
+    </form>
+</body>
+</html>
